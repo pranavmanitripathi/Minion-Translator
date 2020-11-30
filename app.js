@@ -4,7 +4,11 @@
 
 var btntranslate = document.querySelector("#btn-translator");
 var txtinput = document.querySelector("#txt-input");
+var otput = document.querySelector("#output");
+
 
 btntranslate.addEventListener("click",function btntrans(){
-    console.log(txtinput.value);
+    otput.innerText = txtinput.value;
+
+   
 })
