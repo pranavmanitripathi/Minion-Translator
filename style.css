@@ -9,14 +9,16 @@ body{
 :root {
     --primary: #F2C94C;
     --black: #333333;
+    --width-break:600px;
     
 }
-.h1{
+
+nav{
     
         background-color: var(--primary);
         text-align: center;
         font-size: 2rem;
-        padding: 1rem;
+        padding: 1.5rem;
         margin-bottom: 2rem;
         
     
@@ -31,25 +33,32 @@ textarea {
     
 }
 #btn-translator{
-    padding: 1rem ;
+    border: none;
+    padding: 1rem 2rem;
     background-color: var(--primary);
     font-family: "Josefin Sans", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    /* border-radius: 1.2rem; */
+    margin:1rem 0rem;
     border-color: var(--primary);
-    font-size: 1.2rem;
-    margin-left: 2rem;
-    
+    font-size:large;
+   
 }
 
   
  #output{
     border: 1px solid black;
-    height: 15vh;
+    height: 10vh;
     width: 80%;
     margin: auto;
-    margin-top:1rem;
     padding: 1rem;
 
 }   
+
+main{
+    display: block;
+    margin: auto;
+    padding:1rem;
+    max-width:650px;
+}
+div{
+    display: block;
+}
