@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
+*{
+    box-shadow: border-box;
+}
 body{
     font-family: "Josefin Sans", sans-serif;
-    margin: 0px;
+    margin: 0;
     color: #333333;
+    overflow: hidden;
 }
 
 :root {
     --primary: #F2C94C;
     --black: #333333;
-    --width-break:600px;
+    
     
 }
 
@@ -18,21 +22,26 @@ nav{
         background-color: var(--primary);
         text-align: center;
         font-size: 2rem;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        
-    
+        padding: 1rem;
 }
+
+main{
+    margin:auto;
+    padding: 1rem;
+    max-width: 600px;
+}
+
 textarea {
+    box-sizing: border-box;
     display: block;
-    width: 80%;
-    height: 15vh;
-    margin: auto;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
     padding: 1rem;
     font-size: large;
     
 }
-#btn-translator{
+button{
     border: none;
     padding: 1rem 2rem;
     background-color: var(--primary);
@@ -45,20 +54,31 @@ textarea {
 
   
  #output{
+     box-sizing: border-box;
     border: 1px solid black;
-    height: 10vh;
-    width: 80%;
-    margin: auto;
-    padding: 1rem;
-
+    min-height: 15vh;
+    max-height: 20vh;
+    overflow: scroll;
+    width: 100%;
+    margin-bottom: 1rem;
 }   
 
-main{
-    display: block;
+footer{
+    background-color: var(--primary);
+    position: relative;
+    text-align: center;
+    padding: 0.8rem;
     margin: auto;
-    padding:1rem;
-    max-width:650px;
 }
-div{
-    display: block;
+.foot-head{
+    padding: 1rem;
 }
+footer p{
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 1rem;
+   
+    
+}
+
+
