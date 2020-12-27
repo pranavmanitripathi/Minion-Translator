@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
-*{
-    box-shadow: border-box;
-}
+
 body{
     font-family: "Josefin Sans", sans-serif;
     margin: 0;
     color: #333333;
-    overflow: hidden;
 }
 
 :root {
@@ -58,14 +55,12 @@ button{
     border: 1px solid black;
     min-height: 15vh;
     max-height: 20vh;
-    overflow: scroll;
     width: 100%;
     margin-bottom: 1rem;
 }   
 
 footer{
     background-color: var(--primary);
-    position: relative;
     text-align: center;
     padding: 1rem;
     margin: auto;
